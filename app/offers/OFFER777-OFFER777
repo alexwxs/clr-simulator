@@ -1,0 +1,16 @@
+<Promotion id="777" type="PriceDeal" redemptionMode="OnItemSold" exclusive="false">
+	<Languages>
+		<Language code="ru-RU" name="Russian" parent="en">
+			<Name>Offer with minimum</Name>
+			<ShortDescription>Offer with minimum</ShortDescription>
+			<LongDescription>Offer with minimum</LongDescription>
+		</Language>
+	</Languages>
+	<Conditions>
+		<ProductSet alias="Eligible Items" codes="2100" eligible="true" qty="2"/>
+		<SaleAmount includeEligible="false" minimum="114" preTaxValidation="false"/>
+	</Conditions>
+	<Actions>
+		<SetItemPrice discountLimit="0" item="Eligible Items" price="15"/>
+	</Actions>
+</Promotion>

@@ -1,0 +1,17 @@
+<Promotion type="BOGO" exclusive="false" id="500036550" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>BOGO</Name>
+      <ShortDescription>BOGO</ShortDescription>
+      <LongDescription>BOGO</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+			<!-- #podtype# -->
+    <ProductSet codes="8826" qty="1" />
+    <ProductSet codes="8826" qty="1" alias="Eligible Items" eligible="true" />
+  </Conditions>
+  <Actions>
+    <SetItemPrice item="Eligible Items" price="80%" discountLimit="0" />
+  </Actions>
+</Promotion>

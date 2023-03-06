@@ -1,0 +1,17 @@
+{
+  "OfferInfo": {
+    "OfferId": 1270,
+    "PromotionId": 40,
+    "PromotionXmlBase64": "PFByb21vdGlvbiBpZD0iNDAiIHR5cGU9IlByaWNlRGVhbCIgcmVkZW1wdGlvbk1vZGU9Ik9uSXRlbVNvbGQiIGV4Y2x1c2l2ZT0iZmFsc2UiPjxMYW5ndWFnZXM+PExhbmd1YWdlIGNvZGU9InJ1LVJVIiBuYW1lPSJSdXNzaWFuIiBwYXJlbnQ9ImVuIj48TmFtZT5Mb3dlciBQcmljZSBmb3IgQWxleDwvTmFtZT48U2hvcnREZXNjcmlwdGlvbj4xIEJpZyBUYXN0eSBmb3IgNTAgUlVCPC9TaG9ydERlc2NyaXB0aW9uPjxMb25nRGVzY3JpcHRpb24+MSBCaWcgVGFzdHkgZm9yIDUwIFJVQjwvTG9uZ0Rlc2NyaXB0aW9uPjwvTGFuZ3VhZ2U+PC9MYW5ndWFnZXM+PENvbmRpdGlvbnM+PFByb2R1Y3RTZXQgY29kZXM9IjIwMDQiIHF0eT0iMSIgYWxpYXM9IkVsaWdpYmxlIEl0ZW1zMSIgZWxpZ2libGU9InRydWUiLz48L0NvbmRpdGlvbnM+PEFjdGlvbnM+PFNldEl0ZW1QcmljZSBkaXNjb3VudExpbWl0PSIwIiBpdGVtPSJFbGlnaWJsZSBJdGVtczEiIHByaWNlPSI1MCIvPjwvQWN0aW9ucz48L1Byb21vdGlvbj4=",
+    "GenericCouponCode": "OFFERWFY5214",
+    "LocalValidFrom": "2015-07-20T10:00:00",
+    "LocalValidThru": "2025-07-20T23:00:00",
+    "ThresholdMinutes": 0,
+    "Redeemed": false
+  },
+  "CustomerInfo": {
+    "CustomerId": 28,
+    "Email": "ss@ss.ss",
+    "DisplayName": ", андроид"
+  }
+}

@@ -1,0 +1,15 @@
+<Promotion type="BOGO" exclusive="false" id="81234502" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>Buy Small Cone Get 11% off Total Order</Name>
+      <ShortDescription>Buy Small Cone Get 11% off Total Order</ShortDescription>
+      <LongDescription>Buy Small Cone Get 11% off Total Order</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+    <ProductSet codes="4006" qty="1" alias="Eligible Items" eligible="true" />
+  </Conditions>
+  <Actions>
+    <SetSaleDiscount discount="11%" discountLimit="999" />
+  </Actions>
+</Promotion>

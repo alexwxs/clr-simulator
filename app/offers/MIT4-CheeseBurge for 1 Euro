@@ -1,0 +1,15 @@
+<Promotion type="BOGO" exclusive="false" id="77704" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>CheeseBurge for 1 Euro</Name>
+      <ShortDescription>CheeseBurge for 1 Euro</ShortDescription>
+      <LongDescription>CheeseBurge for 1 Euro</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+    <ProductSet codes="2010" qty="1" alias="Eligible Items" eligible="true" />
+  </Conditions>
+  <Actions>
+    <SetItemPrice item="Eligible Items" price="1.00" discountLimit="0" />
+  </Actions>
+</Promotion>

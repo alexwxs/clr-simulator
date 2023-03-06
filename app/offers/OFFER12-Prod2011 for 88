@@ -1,0 +1,16 @@
+<Promotion type="PriceDeal" exclusive="false" id="500037007" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>Product Amount Offer on McRoyal Deluxe</Name>
+      <ShortDescription>Product Amount Offer on McRoyal Deluxe</ShortDescription>
+      <LongDescription>Product Amount Offer on McRoyal Deluxe</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+			<!-- #podtype# -->
+    <ProductSet codes="2011" alias="Eligible Items" />
+  </Conditions>
+  <Actions>
+    <SetItemPrice item="Eligible Items" price="88" discountLimit="0" />
+  </Actions>
+</Promotion>

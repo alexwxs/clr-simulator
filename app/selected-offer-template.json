@@ -1,0 +1,15 @@
+{
+	"Id": 56677,
+	"LastModification": "\/Date(1425605192547-0300)\/",
+	"LocalValidFrom": "\/Date(1424660400000-0300)\/",
+	"LocalValidThru": "\/Date(1428030000000-0300)\/",
+	"LongDescription": "Buy one, get one Big Mac (Item Only)",
+	"OfferType": "Reward",
+	"Parameters": [],
+	"ParticipantRestaurants": [],
+	"PromotionId": 123456,
+	"PromotionXml": "<Promotion><\/Promotion>",
+	"Selected": true,
+	"ShortDescription": "Buy one, get one Big Mac (Item Only)",
+	"ThresholdMinutes": 0
+}

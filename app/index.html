@@ -1,0 +1,223 @@
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style>
+			html {
+				text-align: center;
+				background-color: lightgray;
+			}
+			.selected {
+				background-color: blue;
+				color: white;
+				font-weight: 700
+			}
+			#selected-offer {
+				display:inline-block;
+				width: 900px;
+				background-color: black;
+				color: white;
+				height: 400px;
+			}
+
+			#offer-list {
+			    display: inline-block;
+				width: 80%;
+				border: 1px solid black;
+			}
+
+			#remove-offer {
+				width: 20%;
+				background-color: red;
+				color: white;
+				display: inline-block;
+				cursor: pointer;
+				margin: 10px;
+			}
+
+			.offer-item {
+				cursor: pointer;
+			}
+
+			.new-offer-form {
+				width: 100%;
+				text-align: center;
+			}
+			.new-user-form {
+				width: 100%;
+				text-align: center;
+			}
+			
+			.new-user-form input {
+				width: 30%
+			}
+
+
+			.new-offer-form input {
+				width: 80%
+			}
+
+			.new-offer-form textarea {
+				width: 80%;
+				height: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>SELECT AN OFFER</h1>
+		The selected offer will be returned by CLR Endpoint<br><br>
+		<div id='offer-list'>
+		</div>
+		<br>
+		<div id='remove-offer'>
+		</div>
+		<h2>Promotion Xml</h2>
+		<textarea readonly id='selected-offer'>
+		</textarea>
+		<br><br><hr>
+		<h1>Use a Custom User</h1>
+		<div class='new-user-form'>
+			User Display Name<br><input id="userDisplayName" type="text"></input><br>
+			User Id<br><input id="userId" type="text"></input><br><br>
+			<input id="save-user" type="submit"/>
+		</div>
+		<br><br><hr>
+		<h1>Add new Offer</h1>
+		PunchCard Simulation? <br><input id="punchcard" type="checkbox"></input><br>
+		<div class='new-offer-form'>
+			Random Code<br><input id="randomCode" type="text"></input><br>
+      Offer ID<br><input id="offerId" type="text"></input><br>
+      Offer Name<br><input id="displayName" type="text"></input><br>
+			Promotion XML<br><textarea id="promotionXml"></textarea>
+			<input id="save-offer" type="submit"/>
+		</div>
+	</body>
+	<script>
+		var offers = null;
+		$( document ).ready(function() {
+			$.getJSON("http://localhost:8197/listoffers", function(data) {
+				loadOffers(data);
+			});
+
+			// PUNCHCARD: NO PROMOTION XML
+			$("#punchcard").on('change', function(data) {
+				if (this.checked) {
+					$('#offerId').val("").attr("readonly", true).css("background-color", "gray");
+					$('#displayName').val("").attr("readonly", true).css("background-color", "gray");
+					$('#promotionXml').val("").attr("readonly", true).css("background-color", "gray");
+				} else {
+					$('#offerId').attr("readonly", false).css("background-color", "white");
+					$('#displayName').attr("readonly", false).css("background-color", "white");
+					$('#promotionXml').attr("readonly", false).css("background-color", "white");
+				}
+			});
+
+			// ADD NEW OFFER
+			$("#save-offer").on('click', function(event) {
+				var randomCode = $('#randomCode').val().trim();
+				if (!randomCode) {
+					window.alert("Insert a Random Code!");
+					return;
+				}
+        if (document.getElementById("punchcard").checked)
+        {
+          var offerId = "999999";
+          var displayName = "Punch Card";
+        }
+        else
+        {
+          var offerId = $('#offerId').val().trim();
+          if (!offerId) {
+            window.alert("Insert an Offer ID!");
+            return;
+          }
+          var displayName = $('#displayName').val().trim();
+          if (!displayName) {
+            window.alert("Insert a Display Name!");
+            return;
+          }
+        }
+				var payload = {
+					"randomCode": randomCode,
+					"offerId": offerId,
+					"displayName": displayName,
+					"promotionXml": $('#promotionXml').val(),
+				}
+				$.post("http://localhost:8197/listoffers", payload, function(data) {
+					loadOffers(data);
+					$("#randomCode").val("");
+					$("#offerId").val("");
+					$("#displayName").val("");
+					$("#promotionXml").val("");
+				})
+			})
+			
+			// USE CUSTOM USER
+			$("#save-user").on('click', function(event) {
+        var username = $('#userDisplayName').val().trim()
+        if (!username) {
+					window.alert("Insert a User Name!");
+					return;
+				}
+        var userid = $('#userId').val().trim()
+        if (!userid) {
+					window.alert("Insert a User ID!");
+					return;
+				}
+				var payload = {
+					"username": username,
+					"userid": userid,
+				}
+				$.post("http://localhost:8197/customUser", payload, function(data) {
+					window.alert("User sent to the server");
+				})
+			})
+		});
+
+		function removeOffer(id) {
+			if (window.confirm("Do you really want to remove offer " + offers[id].displayName + "?") == true) {
+				$.ajax({
+				    url: 'http://localhost:8197/listoffers/' + id,
+				    type: 'DELETE',
+				    success: function(result) {
+				        loadOffers(result);
+				    }
+				});
+			}			
+		}
+
+		function selectOffer(id) {
+			$.post("http://localhost:8197/selectOffer/" + id, function(data) {
+				loadOffers(data);
+			})
+		}
+
+		function loadOffers(data) {
+			offers = data;
+			var items = [];
+			var removeItem;
+			var selectedOffer = null;
+			$.each( data, function( key, val ) {
+				if (val["selected"]) {
+					selectedOffer = val;
+					removeItem = "<div class='remove-offer' onclick='removeOffer(" + key + ")'>Remove selected offer</div>"
+					items.push( "<div onclick='selectOffer(" + key + ")'  class='offer-item selected' id='" + key + "'>" + val["randomCode"] + "-" + val["displayName"] + "</div>" );
+				} else {
+					items.push( "<div onclick='selectOffer(" + key + ")'  class='offer-item' id='" + key + "'>" + val["randomCode"] + "-" + val["displayName"] + "</div>" );
+				}
+			});
+			if (items.length) {
+				$('#offer-list').empty();
+				$('#remove-offer').empty();
+			}
+			$( "<div/>", {
+				"class": "offer-list",
+				html: items.join( "" )
+			}).appendTo("#offer-list");
+
+			$("#remove-offer").append(removeItem);
+
+			console.log(selectedOffer["promotionXml"]);
+			$('#selected-offer').text(selectedOffer["promotionXml"]);
+		}
+	</script>
+</html>

@@ -1,0 +1,15 @@
+<Promotion type="OrderDiscount" exclusive="false" id="77703" redemptionMode="OnTotal">
+  <Languages>
+    <Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>PT Discount Off Total Order($ Amount)</Name>
+      <ShortDescription>PT Discount Off Total Order($ Amount)</ShortDescription>
+      <LongDescription>PT Discount Off Total Order($ Amount)</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+         <!-- #podtype# -->
+   </Conditions>
+  <Actions>
+    <SetSaleDiscount discount="0.10" discountLimit="0" />
+  </Actions>
+</Promotion>

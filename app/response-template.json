@@ -1,0 +1,19 @@
+{
+	"CustomerInfo": {
+		"CustomerId": 1223001139,
+		"Email": "customer@email.com",
+		"DisplayName": "Чайко́вский"
+	},
+	"OfferInfo": {
+		"OfferId": 1234,
+		"PromotionId": 1234,
+		"PromotionXmlBase64": "PFByb21vdGlvbiBleGNsdXNpdmU9ImZhbHNlIiBpZD0iOTIwMSIgcmVkZW1wdGlvbk1vZGU9Ik9uSXRlbVNvbGQiIHR5cGU9IkJPR08iIHByaW9yaXR5PSIxMDAiIHN0YXR1cz0iQUNUSVZFIj48TGFuZ3VhZ2VzPjxMYW5ndWFnZSBjb2RlPSJlbi1QSyIgbmFtZT0iRW5nbGlzaCIgcGFyZW50PSJlbiI+PE5hbWU+QmlnIE1hYyA1JSBPZmY8L05hbWU+PFNob3J0RGVzY3JpcHRpb24+QmlnIE1hYyA1JSBPZmY8L1Nob3J0RGVzY3JpcHRpb24+PExvbmdEZXNjcmlwdGlvbj5CaWcgTWFjIDUlIE9mZjwvTG9uZ0Rlc2NyaXB0aW9uPjwvTGFuZ3VhZ2U+PC9MYW5ndWFnZXM+PENvbmRpdGlvbnM+PFByb2R1Y3RTZXQgYWxpYXM9IkVsaWdpYmxlIEl0ZW1zIiBjb2Rlcz0iMTAwNSIgZWxpZ2libGU9InRydWUiIHF0eT0iMSIgLz48L0NvbmRpdGlvbnM+PEFjdGlvbnM+PFNldEl0ZW1QcmljZSBkaXNjb3VudExpbWl0PSIwIiBpdGVtPSJFbGlnaWJsZSBJdGVtcyIgcHJpY2U9Ijk1JSIgLz48L0FjdGlvbnM+PC9Qcm9tb3Rpb24+",
+		"GenericCouponCode": "PK01",
+		"LocalValidFrom": "2019-07-20T10:00:00",
+		"LocalValidThru": "2025-07-20T23:00:00",
+		"ThresholdMinutes": 0,
+		"Redeemed": false,
+    "PrepaidAmount": 8.00,
+		"PrepaidTenderId": 33
+	}
+}

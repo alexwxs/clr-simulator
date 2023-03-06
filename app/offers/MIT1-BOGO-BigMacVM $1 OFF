@@ -1,0 +1,17 @@
+<Promotion type="BOGO" exclusive="false" id="77701" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>BOGO</Name>
+      <ShortDescription>BOGO</ShortDescription>
+      <LongDescription>Buy One Big Mac Get Big Mac VM 1$ OFF</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+			<!-- #podtype# -->
+    <ProductSet codes="2040" qty="1" />
+    <ProductSet codes="5015" qty="1" alias="Eligible Items" eligible="true" />
+  </Conditions>
+  <Actions>
+    <SetItemPrice item="Eligible Items" price="-1" discountLimit="0" />
+  </Actions>
+</Promotion>

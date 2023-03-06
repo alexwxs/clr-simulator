@@ -1,0 +1,13 @@
+{
+    "name": "node-api",
+    "scripts": {
+        "start": "start http://localhost:8197 & node server.js"
+    },
+    "main": "server.js",
+    "dependencies": {
+        "express": "4.0.0",
+        "body-parser": "1.9.3",
+        "cors": "2.8.4",
+        "xml2js": "0.2"
+    }
+}

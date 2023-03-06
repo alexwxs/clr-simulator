@@ -1,0 +1,236 @@
+[
+    {
+        "randomCode": "1011",
+        "offerId": "7011",
+        "displayName": "Big Mac 15% Off",
+        "selected": false
+    },
+    {
+        "randomCode": "MCH1",
+        "offerId": "1201",
+        "displayName": "BOGO-CB 20% OFF",
+        "selected": false
+    },
+    {
+        "randomCode": "MSE1",
+        "offerId": "1201",
+        "displayName": "BOGO-CB 20% OFF",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER31",
+        "offerId": "31",
+        "displayName": "POD Test",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER11",
+        "offerId": "37258",
+        "displayName": "Buy one Big Mac get CB for 50",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER12",
+        "offerId": "37007",
+        "displayName": "Prod2011 for 88",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER13",
+        "offerId": "37031",
+        "displayName": "OrderDiscount 10OFF",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFERAE1",
+        "offerId": "400037258",
+        "displayName": "Buy Big Mac Get BTASTY for 10",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFERAE2",
+        "offerId": "400037007",
+        "displayName": "Large Big Mac VM 20% Off",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFERAE3",
+        "offerId": "400037031",
+        "displayName": "Discount Off Total Order 10",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER14",
+        "offerId": "36550",
+        "displayName": "Buy Big Mac VM Get Another 20% Off",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER1201",
+        "offerId": "1201",
+        "displayName": "OFFER1201",
+        "selected": false
+    },
+    {
+        "randomCode": "MIT3",
+        "offerId": "66603",
+        "displayName": "BOGO-OrderDiscount",
+        "selected": false
+    },
+    {
+        "randomCode": "MIT1",
+        "offerId": "66601",
+        "displayName": "BOGO-BigMacVM $1 OFF",
+        "selected": false
+    },
+    {
+        "randomCode": "MIT8",
+        "offerId": "66608",
+        "displayName": "BOGO-HM 20% OFF",
+        "selected": false
+    },
+    {
+        "randomCode": "MIT2",
+        "offerId": "66602",
+        "displayName": "BOGO-HappyMeal",
+        "selected": false
+    },
+    {
+        "randomCode": "MIT4",
+        "offerId": "66604",
+        "displayName": "CheeseBurge for 1 Euro",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER17",
+        "offerId": "6000017",
+        "displayName": "6000017",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER888",
+        "offerId": "888",
+        "displayName": "OFFER888",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER777",
+        "offerId": "777",
+        "displayName": "OFFER777",
+        "selected": false
+    },
+    {
+        "randomCode": "OFFER333",
+        "offerId": "333",
+        "displayName": "OFFER333",
+        "selected": false
+    },
+    {
+        "randomCode": "M12345",
+        "offerId": "999999",
+        "displayName": "Punch Card",
+        "selected": false
+    },
+    {
+        "randomCode": "MF01",
+        "offerId": "88801",
+        "displayName": "Buy One Big Mac Get Big Mac VM 5 PLN OFF",
+        "selected": false
+    },
+    {
+        "randomCode": "MF03",
+        "offerId": "88803",
+        "displayName": "OrderDiscount 10 PLN OFF",
+        "selected": false
+    },
+    {
+        "randomCode": "MF02",
+        "offerId": "88802",
+        "displayName": "Cheeseburger for 1 PLN",
+        "selected": false
+    },
+    {
+        "randomCode": "MAE4",
+        "offerId": "70002",
+        "displayName": "test4",
+        "selected": false
+    },
+    {
+        "randomCode": "MAE5",
+        "offerId": "58996",
+        "displayName": "25% off Big Mac Regular Meal",
+        "selected": false
+    },
+    {
+        "randomCode": "MM02",
+        "offerId": "81234502",
+        "displayName": "Buy Small Cone Get 11% off Total Order",
+        "selected": false
+    },
+    {
+        "randomCode": "MRU2",
+        "offerId": "20220208",
+        "displayName": "11% order discount",
+        "selected": false
+    },
+    {
+        "randomCode": "MRU3",
+        "offerId": "202203",
+        "displayName": "100 Ruble Off",
+        "selected": false
+    },
+    {
+        "randomCode": "MRU4",
+        "offerId": "202204",
+        "displayName": "Royal cheese burger for 1.00",
+        "selected": false
+    },
+    {
+        "randomCode": "MAE1",
+        "offerId": "46893",
+        "displayName": "Double Cheeseburger Regular Meal",
+        "selected": false
+    },
+    {
+        "randomCode": "MAE2",
+        "offerId": "12352134",
+        "displayName": "MAE2",
+        "selected": false
+    },
+    {
+        "randomCode": "M881",
+        "offerId": "34245",
+        "displayName": "500034245",
+        "selected": false
+    },
+    {
+        "randomCode": "MAE9",
+        "offerId": "12355658",
+        "displayName": "test",
+        "selected": false
+    },
+    {
+        "randomCode": "M0001",
+        "offerId": "49297",
+        "displayName": "McMenu Big Mac 4€",
+        "selected": false
+    },
+    {
+        "randomCode": "M0002",
+        "offerId": "49298",
+        "displayName": "McMenu Big Mac 4€  (-1.40)",
+        "selected": false
+    },
+    {
+        "randomCode": "M0003",
+        "offerId": "49299",
+        "displayName": "test",
+        "selected": false
+    },
+    {
+        "randomCode": "M3001",
+        "offerId": "3001",
+        "displayName": "MPA1",
+        "selected": true
+    }
+]

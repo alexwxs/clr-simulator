@@ -1,0 +1,17 @@
+<Promotion type="BOGO" exclusive="false" id="77702" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>BOGO-HappyMeal</Name>
+      <ShortDescription>BOGO-HappyMeal</ShortDescription>
+      <LongDescription>Buy One McChicken Get McNuggets HM 0.50 Off</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+			<!-- #podtype# -->
+    <ProductSet codes="2110" qty="1" />
+    <ProductSet codes="1155" qty="1" alias="Eligible Items" eligible="true" />
+  </Conditions>
+  <Actions>
+    <SetItemPrice item="Eligible Items" price="-0.50" discountLimit="0" />
+  </Actions>
+</Promotion>

@@ -1,0 +1,8 @@
+{
+	"CustomerInfo": {
+		"CustomerId": 123456,
+		"Email": "customer@email.com",
+		"DisplayName": "Customer Name"
+	},
+	"OfferInfo": null
+}

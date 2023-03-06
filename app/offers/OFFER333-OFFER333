@@ -1,0 +1,17 @@
+<Promotion id="333" type="PriceDeal" redemptionMode="OnItemSold" exclusive="false">
+	<Languages>
+		<Language code="ru-RU" name="Russian" parent="en">
+			<Name>Price Deal Offer</Name>
+			<ShortDescription>Price Deal Offer</ShortDescription>
+			<LongDescription>Price Deal Offer</LongDescription>
+		</Language>
+	</Languages>
+	<Conditions>
+		<ProductSet alias="Eligible Items" codes="2060" eligible="true" qty="2"/>
+		<ProductSet alias="Eligible Items2" codes="2004" eligible="true" qty="1"/>
+	</Conditions>
+	<Actions>
+		<SetItemPrice discountLimit="0" item="Eligible Items" price="35"/>
+		<SetItemPrice discountLimit="0" item="Eligible Items2" price="10"/>
+	</Actions>
+</Promotion>

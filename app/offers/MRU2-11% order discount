@@ -1,0 +1,15 @@
+<Promotion exclusive="false" id="20220208" redemptionMode="OnItemSold" type="PriceDeal">
+    <Languages>
+        <Language code="ru-RU" name="Russian" parent="en">
+            <Name>Tea</Name>
+            <ShortDescription>Tea Offer</ShortDescription>
+            <LongDescription>Tea Offer</LongDescription>
+        </Language>
+    </Languages>
+  <Conditions>
+         <!-- #podtype# -->
+   </Conditions>
+  <Actions>
+    <SetSaleDiscount discount="11%" discountLimit="0" />
+  </Actions>
+</Promotion>

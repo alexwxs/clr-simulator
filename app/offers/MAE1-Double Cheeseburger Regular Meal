@@ -1,0 +1,22 @@
+<Promotion exclusive="false" id="500046893" redemptionMode="OnItemSold" type="PriceDeal">
+   <Languages>
+      <Language code="en-SA" name="English" parent="en">
+         <Name>Double Cheeseburger Regular Meal</Name>
+         <ShortDescription>Applicable on: Double Cheeseburger Regular Meal only</ShortDescription>
+         <LongDescription>Applicable on: Double Cheeseburger Regular Meal only</LongDescription>
+      </Language>
+      <Language code="ar-SA" name="Arabic" parent="ar">
+         <Name>وجبة دبل تشيز برجر بالحجم العادي</Name>
+         <ShortDescription>يسري العرض على: وجبة دبل تشيز برجر بالحجم العادي فقط</ShortDescription>
+         <LongDescription>يسري العرض على: وجبة دبل تشيز برجر بالحجم العادي فقط</LongDescription>
+      </Language>
+   </Languages>
+   <Conditions>
+      <!-- #podtype# -->        
+      <ProductSet alias="Eligible Items" codes="10606" eligible="true"/>
+	  <SaleAmount includeEligible="false" includeNonProduct="false" includePromotional="true" minimum="0" preTaxValidation="true" />
+   </Conditions>
+   <Actions>
+      <SetItemPrice item="Eligible Items" price="0%" discountLimit="0" />
+   </Actions>
+</Promotion>

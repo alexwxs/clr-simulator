@@ -1,0 +1,16 @@
+ <Promotion exclusive="false" id="202204" redemptionMode="OnItemSold" type="BOGO"> 
+  <Languages>  
+    <Language code="en-CN" name="English" parent="en">
+      <Name>Royal cheese burger for 1.00</Name>
+      <ShortDescription>Royal cheese burger for 1.00</ShortDescription>
+      <LongDescription>Royal cheese burger for 1.00</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+    <ProductSet codes="2060" qty="1"/>
+    <ProductSet alias="Eligible Items" codes="2060" eligible="true" qty="1"/>
+  </Conditions>
+  <Actions>
+    <SetItemPrice discountLimit="0" item="Eligible Items" price="1.00"/>
+  </Actions>
+ </Promotion>

@@ -1,0 +1,15 @@
+<Promotion type="BOGO" exclusive="false" id="88802" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>Cheeseburger for 1 PLN</Name>
+      <ShortDescription>Cheeseburger for 1 PLN</ShortDescription>
+      <LongDescription>Cheeseburger for 1 PLN</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+    <ProductSet codes="1030" qty="1" alias="Eligible Items" eligible="true" />
+  </Conditions>
+  <Actions>
+    <SetItemPrice item="Eligible Items" price="1.00" discountLimit="0" />
+  </Actions>
+</Promotion>

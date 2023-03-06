@@ -1,0 +1,21 @@
+<Promotion exclusive="false" id="500046266" redemptionMode="OnItemSold" type="PriceDeal">
+  <Languages>
+    <Language code="en-SA" name="English" parent="en">
+      <Name>Ice Cream Cone</Name>
+      <ShortDescription>Applicable on: Ice Cream Cone Only</ShortDescription>
+      <LongDescription>Applicable on: Ice Cream Cone Only</LongDescription>
+    </Language>
+    <Language code="ar-SA" name="Arabic" parent="ar">
+      <Name>آيس كريم بالبسكويت</Name>
+      <ShortDescription>يسري العرض على: آيس كريم بالبسكويت فقط</ShortDescription>
+      <LongDescription>يسري العرض على: آيس كريم بالبسكويت فقط</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+    <!-- #podtype# -->
+    <ProductSet alias="Eligible Items" codes="1231|7592"/>
+  </Conditions>
+  <Actions>
+    <SetItemPrice discountLimit="0" item="Eligible Items" price="0"/>
+  </Actions>
+</Promotion>

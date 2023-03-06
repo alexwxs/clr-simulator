@@ -1,0 +1,16 @@
+ <Promotion exclusive="false" id="2" redemptionMode="OnItemSold" type="BOGO"> 
+      <Languages>  
+        <Language code="en-CN" name="English" parent="en">
+          <Name>Buy One Big Mac Get Another 20% Off</Name>
+          <ShortDescription>Buy One Big Mac Get Another 20% Off</ShortDescription>
+          <LongDescription>Buy One Big Mac Get Another 20% Off</LongDescription>
+        </Language>
+      </Languages>
+      <Conditions>
+				<ProductSet codes="2100" qty="1"/>
+				<ProductSet alias="Eligible Items" codes="2100" eligible="true" qty="1"/>
+			</Conditions>
+			<Actions>
+				<SetItemPrice discountLimit="0" item="Eligible Items" price="80%"/>
+			</Actions>
+    </Promotion>

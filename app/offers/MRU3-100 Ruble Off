@@ -1,0 +1,15 @@
+<Promotion exclusive="false" id="202203" redemptionMode="OnItemSold" type="PriceDeal">
+    <Languages>
+        <Language code="ru-RU" name="Russian" parent="en">
+            <Name>100 Ruble Off</Name>
+            <ShortDescription>100 Ruble Off</ShortDescription>
+            <LongDescription>100 Ruble Off</LongDescription>
+        </Language>
+    </Languages>
+  <Conditions>
+         <!-- #podtype# -->
+   </Conditions>
+  <Actions>
+    <SetSaleDiscount discount="100" discountLimit="0" />
+  </Actions>
+</Promotion>

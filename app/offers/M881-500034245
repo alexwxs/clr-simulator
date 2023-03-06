@@ -1,0 +1,21 @@
+<Promotion exclusive="false" id="500034245" redemptionMode="OnItemSold" type="PriceDeal">
+   <Languages>
+      <Language code="en-SA" name="English" parent="en">
+         <Name>Big Tasty Regular Meal</Name>
+         <ShortDescription>Big Tasty Regular Meal for 3400 points</ShortDescription>
+         <LongDescription>Big Tasty Regular Meal</LongDescription>
+      </Language>
+      <Language code="ar-SA" name="Arabic" parent="ar">
+         <Name>Big Tasty Regular Meal</Name>
+         <ShortDescription>Big Tasty Regular Meal</ShortDescription>
+         <LongDescription>Big Tasty Regular Meal</LongDescription>
+      </Language>
+   </Languages>
+   <Conditions>
+			<!-- #podtype# -->
+      <ProductSet alias="Eligible Items" codes="120038" eligible="true"/>
+   </Conditions>
+   <Actions>
+      <SetItemPrice discountLimit="0" item="Eligible Items" price="0"/>
+   </Actions>
+</Promotion>

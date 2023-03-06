@@ -1,0 +1,15 @@
+<Promotion exclusive="false" id="888" redemptionMode="OnItemSold" type="PriceDeal">
+    <Languages>
+        <Language code="ru-RU" name="Russian" parent="en">
+            <Name>Tea</Name>
+            <ShortDescription>Tea Offer</ShortDescription>
+            <LongDescription>Tea Offer</LongDescription>
+        </Language>
+    </Languages>
+    <Conditions>
+        <ProductSet alias="Eligible Items" codes="7149" eligible="true" qty="1"/>
+    </Conditions>
+    <Actions>
+        <SetItemPrice discountLimit="0" item="Eligible Items" price="20"/>
+    </Actions>
+</Promotion>

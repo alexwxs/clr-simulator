@@ -1,0 +1,15 @@
+<Promotion type="OrderDiscount" exclusive="false" id="88803" redemptionMode="OnTotal">
+  <Languages>
+    <Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>OrderDiscount 10 PLN OFF</Name>
+      <ShortDescription>OrderDiscount 10 PLN OFF</ShortDescription>
+      <LongDescription>OrderDiscount 10 PLN OFF</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+         <!-- #podtype# -->
+   </Conditions>
+  <Actions>
+    <SetSaleDiscount discount="10" discountLimit="0" />
+  </Actions>
+</Promotion>

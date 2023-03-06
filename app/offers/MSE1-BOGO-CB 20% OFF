@@ -1,0 +1,16 @@
+ <Promotion exclusive="false" id="991201" redemptionMode="OnItemSold" type="BOGO"> 
+  <Languages>  
+    <Language code="se" name="Swedish">
+      <Name>BOGO-CB 20% OFF</Name>
+      <ShortDescription>Buy One Cheese Burger Get Another 20% Off</ShortDescription>
+      <LongDescription>Buy One Cheese Burger Get Another 20% Off</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+    <ProductSet codes="1091" qty="1"/>
+    <ProductSet alias="Eligible Items" codes="1091" eligible="true" qty="1"/>
+  </Conditions>
+  <Actions>
+    <SetItemPrice discountLimit="0" item="Eligible Items" price="80%"/>
+  </Actions>
+ </Promotion>

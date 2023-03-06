@@ -1,0 +1,15 @@
+ <Promotion exclusive="false" id="91" redemptionMode="OnItemSold" type="BOGO"> 
+      <Languages>  
+        <Language code="en-CN" name="English" parent="en">
+          <Name>巨无霸 Big Mac 15% Off</Name>
+          <ShortDescription>巨无霸 Big Mac 15% Off</ShortDescription>
+          <LongDescription>巨无霸 Big Mac 15% Off</LongDescription>
+        </Language>
+      </Languages>
+      <Conditions>
+				<ProductSet alias="Eligible Items" codes="1011" eligible="true" qty="1"/>
+			</Conditions>
+			<Actions>
+				<SetItemPrice discountLimit="0" item="Eligible Items" price="85%"/>
+			</Actions>
+    </Promotion>

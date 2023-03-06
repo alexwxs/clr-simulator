@@ -1,0 +1,16 @@
+<Promotion type="PriceDeal" exclusive="false" id="500049298" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>McMenu Big Mac 4€</Name>
+      <ShortDescription>McMenu Big Mac 4€</ShortDescription>
+      <LongDescription>McMenu Big Mac 4€</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+			<!-- #podtype# -->
+    <ProductSet codes="2056" alias="Eligible Items" />
+  </Conditions>
+  <Actions>
+    <SetItemPrice item="Eligible Items" price="-1.40" discountLimit="0" />
+  </Actions>
+</Promotion>

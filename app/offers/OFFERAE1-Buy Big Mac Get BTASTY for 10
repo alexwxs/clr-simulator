@@ -1,0 +1,17 @@
+<Promotion type="BOGO" exclusive="false" id="400037258" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>Buy Big Mac Get BTASTY for 10</Name>
+      <ShortDescription>HA_3 Buy one Big Mac Medium Meal (2056) GET McChicken Large Value meal (2052) for 4$</ShortDescription>
+      <LongDescription>HA_3 Buy one Big Mac Medium Meal (2056) GET McChicken Large Value meal (2052) for 4$</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+			<!-- #podtype# -->
+    <ProductSet codes="5" qty="1" />
+    <ProductSet codes="13" qty="1" alias="Eligible Items" eligible="true" />
+  </Conditions>
+  <Actions>
+    <SetItemPrice item="Eligible Items" price="10" discountLimit="0" />
+  </Actions>
+</Promotion>

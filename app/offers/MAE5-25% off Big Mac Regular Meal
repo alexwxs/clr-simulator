@@ -1,0 +1,21 @@
+<Promotion exclusive="false" id="500058996" redemptionMode="OnItemSold" type="PriceDeal">
+   <Languages>
+      <Language code="en-SA" name="English" parent="en">
+         <Name>25% off Big Mac Regular Meal</Name>
+         <ShortDescription>Applicable on: Big Mac Regular Meal only</ShortDescription>
+         <LongDescription>خصم 25% على وجبة بيج ماك بالحجم العادي</LongDescription>
+      </Language>
+      <Language code="ar-SA" name="Arabic" parent="ar">
+         <Name>خصم 25% على وجبة بيج ماك بالحجم العادي</Name>
+         <ShortDescription> العرض يسري على- وجبة بيج ماك  بالحجم العادي</ShortDescription>
+         <LongDescription> العرض يسري على- وجبة بيج ماك  بالحجم العادي</LongDescription>
+      </Language>
+   </Languages>
+   <Conditions>
+      <!-- #podtype# -->      
+      <ProductSet alias="Eligible Items" codes="10601"/>
+   </Conditions>
+   <Actions>
+      <SetItemPrice discountLimit="0" item="Eligible Items" price="75%"/>
+   </Actions>
+</Promotion>

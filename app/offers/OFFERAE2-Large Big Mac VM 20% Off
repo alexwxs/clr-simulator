@@ -1,0 +1,16 @@
+<Promotion type="PriceDeal" exclusive="false" id="400037007" redemptionMode="OnItemSold">
+  <Languages>
+	<Language code="pt-PT" parent="pt" name="Portuguese">
+      <Name>Large Big Mac VM 20% Off</Name>
+      <ShortDescription>Product Amount Offer on McRoyal Deluxe</ShortDescription>
+      <LongDescription>Product Amount Offer on McRoyal Deluxe</LongDescription>
+    </Language>
+  </Languages>
+  <Conditions>
+			<!-- #podtype# -->
+    <ProductSet codes="801" alias="Eligible Items" />
+  </Conditions>
+  <Actions>
+    <SetItemPrice item="Eligible Items" price="80%" discountLimit="0" />
+  </Actions>
+</Promotion>
